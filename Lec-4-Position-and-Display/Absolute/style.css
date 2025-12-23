@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+}
+.container {
+  width: 500px;
+  background-color: yellow;
+  margin: 2rem 3rem;
+  position: relative;
+}
+.container p {
+  padding: 2rem;
+}
+.icon {
+  background-color: red;
+  font-weight: bold;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

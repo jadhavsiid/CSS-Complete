@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Practice</title>
+  <style>
+    /* ----------------
+       1. Simple Selectors
+       ---------------- */
+    h1 {
+      color: blue; /* all h1 text blue */
+    }
+
+    #intro {
+      color: green; /* only the intro paragraph */
+    }
+
+    .note {
+      color: orange; /* all elements with class 'note' */
+    }
+
+    /* ----------------
+       2. Combinator Selectors
+       ---------------- */
+    .container p {
+      color: purple; /* all <p> inside .container */
+    }
+
+    ul > li {
+      background-color: lightgray; /* direct child li of ul */
+    }
+
+    .note + a {
+      color: red; /* link immediately after .note paragraph */
+    }
+
+    /* ----------------
+       3. Attribute Selectors
+       ---------------- */
+    a[target="_blank"] {
+      color: darkblue;
+    }
+
+    a[href="about.html"] {
+      text-decoration: underline;
+    }
+
+    /* ----------------
+       4. Pseudo-class Selectors
+       ---------------- */
+    a:hover {
+      color: pink; /* hover effect */
+    }
+
+    li:nth-child(odd) {
+      background-color: yellow; /* odd list items */
+    }
+
+    /* ----------------
+       5. Pseudo-element Selectors
+       ---------------- */
+    li::before {
+      content: "👉 ";
+    }
+
+    li::after {
+      content: " ✅";
+    }
+
+    #intro::before {
+      content: "--- ";
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the CSS Practice Page</h1>
+
+  <div class="container">
+    <p id="intro">This is the introduction paragraph.</p>
+    <p class="note">Remember: Practice makes perfect!</p>
+
+    <ul>
+      <li class="item">HTML</li>
+      <li class="item special">CSS</li>
+      <li class="item">JavaScript</li>
+    </ul>
+
+    <a href="https://example.com" target="_blank">Visit Example</a>
+    <a href="about.html">About Page</a>
+  </div>
+</body>
+</html>

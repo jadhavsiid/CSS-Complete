@@ -1,0 +1,39 @@
+/* ^ Universal CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ^ Margin Collapse */
+h1 {
+  background-color: blueviolet;
+  color: #fff;
+  margin-bottom: 50px;
+}
+h2 {
+  background-color: chartreuse;
+  margin-top: 20px;
+}
+/* ^ Min Max width and height  */
+p.width {
+  background-color: hotpink;
+  min-width: 200px;
+  max-width: 500px;
+}
+/*  ^ Overflow property */
+p#overflow {
+  background: #04aa6d;
+  color: white;
+  padding: 15px;
+  width: 50%;
+  height: 100px;
+  border: 1px solid #ccc;
+  overflow: scroll;
+}
+/*  ^ Visibility property */
+li#cheese {
+  visibility: hidden;
+}
+tr#jacob {
+  visibility: collapse;
+}

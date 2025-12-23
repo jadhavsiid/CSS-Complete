@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blue-container {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+  position: relative;
+  z-index: 100;
+}
+.pink-container {
+  width: 200px;
+  height: 200px;
+  background-color: hotpink;
+  position: relative;
+  bottom: 200px;
+}
+nav ul li {
+  background-color: yellow;
+  /* display: inline; */
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+}
+span {
+  background-color: green;
+  color: #fff;
+  display: block;
+  width: 200px;
+}

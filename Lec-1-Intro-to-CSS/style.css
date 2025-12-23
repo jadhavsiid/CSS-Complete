@@ -1,0 +1,134 @@
+/* & Simple Selector */
+/* * Universal Selector */
+/* *{
+    background-color: black;
+    color: white;
+} */
+/* *TagName Selector */
+/* h1{
+    color: red;
+} */
+/* * ID selector */
+/* #demo{
+    color: blue;
+} */
+/* * class selector */
+/* .demo-class{
+    background-color: pink;
+    color: white;
+
+} */
+/* * Grouping Selector */
+/* h2,span,p{
+    color: green;
+} */
+
+/* & Combinator Selectors */
+/* * Descendant Selector */
+/* div p{
+    background-color: lightyellow;
+} */
+/* * Child Selector */
+/* div > p{
+    background-color: lightgreen;
+} */
+/* * Adjacent Sibling Selector */
+/* div + p{
+    color: saddlebrown;
+    font-style: oblique;
+    font-size: 2.5rem;
+} */
+/* * General Sibling Selector */
+/* div ~ p{
+    color: darkcyan;
+    font-size: x-large;
+} */
+/* & Attribute Selector */
+[target] {
+  color: yellow;
+  font-style: italic;
+}
+[src*="flower"] {
+  width: 200px;
+}
+[src*="pizza"] {
+  width: 400px;
+}
+/* & Pseudo-element selector */
+/* *::first-letter */
+/* p::first-letter {
+  color: red;
+  font-size: 1.8rem;
+}
+/* *::first-letter */
+/* p::first-line {
+  background-color: darkorange;
+} */
+/* *::before */
+/* h1::before {
+  content: "🎉";
+  color: blue;
+} */
+/* *::after */
+/* h1::after {
+  content: "🎉";
+  color: blue;
+} */
+/* *::selection */
+/* h1::selection{
+    background-color: hotpink;
+    color: white;
+
+} */
+/* *::marker */
+/* ::marker{
+    color: hotpink;
+} */
+
+/* & Pseudo-class selectors */
+/* ! Dynamic Pseudo-classes */
+/* * link */
+a:link {
+  color: darkgreen;
+}
+/* * visited */
+a:visited {
+  color: orange;
+}
+/* * active */
+a:active {
+  background-color: violet;
+  color: black;
+}
+button {
+  background-color: black;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 0.2rem 1rem;
+}
+/* * hover */
+button:hover {
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+}
+/* * focus */
+button:focus {
+  background-color: blue;
+  color: white;
+  cursor: grab;
+}
+/* ! Structural Pseudo-classes */
+p:first-child {
+  background-color: darkred;
+  color: white;
+}
+p:last-child {
+  background-color: darkmagenta;
+  color: white;
+}
+P:nth-child(2) {
+  background-color: darkblue;
+  color: white;
+}
