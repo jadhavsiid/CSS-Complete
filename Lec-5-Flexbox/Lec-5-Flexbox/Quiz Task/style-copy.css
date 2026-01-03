@@ -1,0 +1,149 @@
+/* ^ Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+.main-wrapper {
+  width: 50%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(35px);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+}
+.main-wrapper .image-left {
+  width: 38%;
+  background-image: url("./images/netflix-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-wrapper .content-right {
+  width: 60%;
+  margin-left: 1.5rem;
+}
+.top-content {
+  position: relative;
+}
+.content-right h1,
+h6 {
+  margin-top: 1.5rem;
+}
+.content-right h6 {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.watchtime {
+  margin-top: 0.2rem;
+  opacity: 80%;
+}
+.watchtime i {
+  font-size: 0.83rem;
+}
+#watchtime {
+  margin: 0;
+}
+.tags {
+  margin-top: 0.8rem;
+}
+.tags ul li {
+  list-style: none;
+  font-size: 0.8rem;
+  background-color: rgba(210, 4, 45, 0.5);
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 30px;
+}
+.tags ul li:hover {
+  cursor: pointer;
+}
+.ratings {
+  margin-top: 0.5rem;
+}
+.ratings .stars i {
+  font-size: 0.8rem;
+}
+.number p {
+  font-size: 0.8rem;
+}
+.trending {
+  right: 20px;
+  border: 1px solid #ffffff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 30px;
+}
+.stars:hover {
+  cursor: pointer;
+}
+.trending:hover {
+  cursor: pointer;
+}
+.label {
+  background-color: #d2042d;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  font-weight: bold;
+}
+hr {
+  margin: 1rem 1rem 1rem 0;
+}
+.mid-content p {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+.creators {
+  text-decoration: none;
+  color: #5da3f0;
+}
+#cast {
+  margin: 0.8rem 0;
+}
+
+.actor img {
+  width: 50px;
+  height: 50px;
+}
+.actor a {
+  font-size: 0.7rem;
+  width: 2rem;
+  color: hsla(0, 0%, 100%, 0.8);
+  text-decoration: none;
+}
+.end-content {
+  margin: 1rem 0;
+}
+.end-content button {
+  padding: 0.7rem 5rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: #d2042d;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.end-content button:hover {
+  cursor: pointer;
+}
+.end-content button i {
+  margin-right: 0.5rem;
+}
+.end-btn {
+  padding: 0.5rem 0.5rem;
+}
