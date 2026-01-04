@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* @keyframes myanimation {
+            from{
+                background-color: #ffffff;
+            }
+            to{
+                background-color: #000000;
+            }
+        } */
+        .box1{
+            width: 350px;
+            height: 350px;
+            border: 3px solid #000000;
+            /* animation-name: myanimation;
+            animation-duration: 8s;
+            animation-delay: 3s; */
+        }
+        
+        @keyframes animation2 {
+            0%{
+                background-color: #000000;
+                top: 0;
+                left: 0;
+            }
+            25%{
+                background-color: red;
+                top: 0;
+                left: 240px;
+            }
+            50%{
+                background-color: blue;
+                top: 240px;
+                left: 240px;
+            }
+            75%{
+                background-color: yellow;
+                top: 240px;
+                left: 0;
+            }
+            100%{
+                background-color: #000000;
+                top: 0;
+                left: 0;
+            }
+            
+        }
+        .box2{
+            width: 80px;
+            height: 60px;
+            background-color: #000000;
+            margin: 1rem 1rem;
+            position: relative;
+            animation-name: animation2;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            /* animation-iteration-count: 2; */
+            /* animation-direction: alternate-reverse; */
+            animation-timing-function: ease-in-out;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
